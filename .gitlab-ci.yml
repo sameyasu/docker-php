@@ -1,0 +1,19 @@
+image: docker:stable
+services:
+    - docker:dind
+
+# EC2で実行する場合にはこのドライバー指定でエラーになる場合がある
+variables:
+    DOCKER_DRIVER: overlay2
+
+before_script:
+    - apk update && apk add bash
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN registry.gitlab.com
+
+stages:
+    - build
+
+build:
+    stage: build
+    script:
+        - bash ./ci/build.sh
