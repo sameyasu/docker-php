@@ -2,7 +2,9 @@ image: docker:stable
 services:
     - docker:dind
 
-# EC2で実行する場合にはこのドライバー指定でエラーになる場合がある
+# overlay2ドライバーがインストールされていない環境ではエラーになる
+# Ubuntu trusty 14.04だと別途インストールが必要
+# https://docs.docker.com/install/linux/docker-ce/ubuntu/#extra-steps-for-aufs
 variables:
     DOCKER_DRIVER: overlay2
 
