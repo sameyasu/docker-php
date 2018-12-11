@@ -11,7 +11,7 @@ if [ ! -z "$CI_COMMIT_TAG" ]; then
     RELEASE_TAG=$CI_COMMIT_TAG
 fi
 
-php_envs="7.2-apache 7.2-batch 7.2-phpcs"
+php_envs="7.2-apache 7.2-batch 7.2-phpcs 7.3-apache 7.3-batch 7.3-phpcs"
 
 for php_env in $php_envs
 do
