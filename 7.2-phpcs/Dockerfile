@@ -7,7 +7,8 @@ ENV LANG C.UTF-8
 RUN apt-get update && \
     apt-get install -y locales cron wget git unzip && \
     cp -f /usr/share/zoneinfo/Japan /etc/localtime && \
-    docker-php-ext-install calendar
+    docker-php-ext-install calendar && \
+    rm -rf /var/lib/apt/lists/*
 
 WORKDIR /usr/local/bin
 RUN set -ex; \
