@@ -14,10 +14,3 @@ WORKDIR /usr/local/bin
 RUN set -ex; \
     wget https://getcomposer.org/composer.phar; \
     ln -sf composer.phar composer
-
-WORKDIR /init.d
-VOLUME /init.d
-
-COPY entrypoint.sh /usr/local/bin
-
-CMD ["entrypoint.sh"]

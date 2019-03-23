@@ -1,4 +1,4 @@
-FROM php:7.3-cli
+FROM php:7.2-cli
 
 LABEL maintainer="sameyasu@gmail.com"
 
@@ -14,10 +14,3 @@ WORKDIR /usr/local/bin
 RUN set -ex; \
     wget https://getcomposer.org/composer.phar; \
     ln -sf composer.phar composer
-
-WORKDIR /init.d
-VOLUME /init.d
-
-COPY entrypoint.sh /usr/local/bin
-
-CMD ["entrypoint.sh"]
