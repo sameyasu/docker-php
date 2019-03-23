@@ -5,7 +5,7 @@ set -e
 RELEASE_TAG=$CI_COMMIT_REF_NAME
 DOCKER_TAG=$CI_COMMIT_SHA
 
-php_envs="7.2-apache 7.2-batch 7.2-phpcs 7.3-apache 7.3-batch 7.3-phpcs"
+php_envs="7.2-apache 7.2-batch 7.2-phpcs 7.3-apache 7.3-batch 7.3-phpcs 7.3-cli"
 
 for php_env in $php_envs
 do
