@@ -14,4 +14,5 @@ RUN apt-get update && \
 WORKDIR /usr/local/bin
 RUN set -ex; \
     wget https://getcomposer.org/composer.phar; \
+    chmod +x composer.phar; \
     ln -sf composer.phar composer

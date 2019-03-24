@@ -13,6 +13,7 @@ RUN apt-get update && \
 WORKDIR /usr/local/bin
 RUN set -ex; \
     wget https://getcomposer.org/composer.phar; \
+    chmod +x composer.phar; \
     ln -sf composer.phar composer; \
     php -f /usr/local/bin/composer.phar global require "squizlabs/php_codesniffer=*"; \
     ln -sf /root/.composer/vendor/bin/phpcs /usr/local/bin/phpcs; \
