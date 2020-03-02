@@ -5,7 +5,7 @@ LABEL maintainer="sameyasu@gmail.com"
 ENV LANG C.UTF-8
 
 RUN apt-get update && \
-    apt-get install -y locales cron mysql-client wget git unzip && \
+    apt-get install -y locales cron default-mysql-client wget git unzip && \
     cp -f /usr/share/zoneinfo/Japan /etc/localtime && \
     docker-php-ext-install pdo_mysql calendar && \
     rm -rf /var/lib/apt/lists/*
