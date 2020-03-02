@@ -6,14 +6,14 @@
 
 |タグ|用途|
 |:--|:--|
+|[7.4-cli](https://gitlab.com/sameyasu/docker-php/blob/master/7.3-cli/Dockerfile)|php7.4のCLIを実行する|
+|[7.4-apache](https://gitlab.com/sameyasu/docker-php/blob/master/7.3-apache/Dockerfile)|apacheでphp7.4のWebアプリケーションを実行する|
+|[7.4-batch](https://gitlab.com/sameyasu/docker-php/blob/master/7.3-batch/Dockerfile)|cronでphp7.4を実行する|
+|[7.4-phpcs](https://gitlab.com/sameyasu/docker-php/blob/master/7.3-phpcs/Dockerfile)|php7.4でphpcs/phpcbfを実行する|
 |[7.3-cli](https://gitlab.com/sameyasu/docker-php/blob/master/7.3-cli/Dockerfile)|php7.3のCLIを実行する|
 |[7.3-apache](https://gitlab.com/sameyasu/docker-php/blob/master/7.3-apache/Dockerfile)|apacheでphp7.3のWebアプリケーションを実行する|
 |[7.3-batch](https://gitlab.com/sameyasu/docker-php/blob/master/7.3-batch/Dockerfile)|cronでphp7.3を実行する|
 |[7.3-phpcs](https://gitlab.com/sameyasu/docker-php/blob/master/7.3-phpcs/Dockerfile)|php7.3でphpcs/phpcbfを実行する|
-|[7.2-cli](https://gitlab.com/sameyasu/docker-php/blob/master/7.2-cli/Dockerfile)|php7.2のCLIを実行する|
-|[7.2-apache](https://gitlab.com/sameyasu/docker-php/blob/master/7.2-apache/Dockerfile)|apacheでphp7.2のWebアプリケーションを実行する|
-|[7.2-batch](https://gitlab.com/sameyasu/docker-php/blob/master/7.2-batch/Dockerfile)|cronでphp7.2を実行する|
-|[7.2-phpcs](https://gitlab.com/sameyasu/docker-php/blob/master/7.2-phpcs/Dockerfile)|php7.2でphpcs/phpcbfを実行する|
 
 全てのタグでcomposer.pharが使えます。
 
